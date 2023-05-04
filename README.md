@@ -1,14 +1,14 @@
 # annotorious-OpenseaDragon
 
-// try index.html
+open index.html
 
-// run code below in console to see the registered tools
+run code below in console to see the registered tools
 
 anno.listDrawingTools();
 
-// (8) ['multipolygon', 'freehand', 'ellipse', 'circle', 'point', 'rect', 'polygon', 'line']
+(8) ['multipolygon', 'freehand', 'ellipse', 'circle', 'point', 'rect', 'polygon', 'line']
 
-// set the tool like below
+set the tool like below
 
 anno.setDrawingTool('line');
 
