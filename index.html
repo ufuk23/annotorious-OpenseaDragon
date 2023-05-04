@@ -1,4 +1,18 @@
-<!doctype html><html><head><meta charset="utf-8"/><title>Annotorious OpenSeadragon Example</title><link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"><link href="annotorious.min.css" rel="stylesheet"><link href="annotorious.min.css" rel="stylesheet"><script src="annotorious.min.js"></script><script src="openseadragon/openseadragon.3.0.0.min.js"></script><script src="openseadragon-annotorious.min.js"></script><script src="annotorious-selector-pack.js"></script><style>html, body {
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Annotorious OpenSeadragon Example</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="annotorious.min.css" rel="stylesheet">
+	<link type="text/css" href="annotorious.min.css" rel="stylesheet">
+	
+	<script type="text/javascript" src="annotorious.min.js"></script>
+	<script src="openseadragon/openseadragon.3.0.0.min.js"></script>
+    <script src="openseadragon-annotorious.min.js"></script>
+	<script src="annotorious-selector-pack.js"></script>
+    <style>
+      html, body {
         margin:0;
         padding:0;
         background-color:#e2e2e2;
@@ -34,7 +48,11 @@
 
       .a9s-selection-mask {
         display:none;
-      }</style><script>var anno;
+      }
+    </style>
+    <script>
+	
+	var anno;
 	var viewer;
 	var aa;
 	
@@ -76,7 +94,6 @@
         anno = OpenSeadragon.Annotorious(viewer, {
           locale: 'auto',
 		  disableEditor: true
-          // disableEditor: true
         });
 
 		Annotorious.SelectorPack(anno, {
@@ -167,4 +184,22 @@
 
 
 
-      }</script><link href="annotorious.min.css" rel="stylesheet"></head><body><div class="column"><h1>Annotorious | OpenSeadragon Example AAA</h1><p class="instructions">Click the annotation to edit. Hold <strong>SHIFT</strong> while clicking and dragging the mouse to create a new annotation.</p><p><button id="current-tool">TOOL: RECTANGLE</button> <button id="mode">MODE: VIEW</button></p><div id="openseadragon" style="width: 640px; height: 480px;"></div></div><script src="openseadragon-annotorious.min.js"></script></body></html>
+      }
+    </script>
+  </head>
+  <body>
+    <div class="column">
+      <h1>Annotorious | OpenSeadragon Example AAA</h1>
+      <p class="instructions">
+        Click the annotation to edit. Hold <strong>SHIFT</strong> while clicking and 
+        dragging the mouse to create a new annotation. 
+      </p>
+      <p>
+        <button id="current-tool">TOOL: RECTANGLE</button>
+        <button id="mode">MODE: VIEW</button>
+      </p>
+      <div id="openseadragon" style="width: 640px; height: 480px;"></div>
+    </div>      
+
+  </body>
+</html>
